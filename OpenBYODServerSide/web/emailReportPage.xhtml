@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+        <h:head>
+        <title>Relatório</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>        
+        <h:outputStylesheet library="css" name="table-style.css"  />
+    </h:head>
+    <h:body>
+        <h2>Relatório de Perfomance - Emails enviados e recebidos</h2>
+        
+        <p><h3>Emails Enviados</h3></p>
+        
+            <h:dataTable id="table1" value="#{reportsBean.emailSentReportList}" var="row"
+                         styleClass="order-table"
+    			headerClass="order-table-header"
+    			rowClasses="order-table-odd-row,order-table-even-row"> 
+                <h:column>
+                        <!-- column header -->
+                        <f:facet name="header">Email Funcionário</f:facet>
+                        <!-- row record -->                        
+                        <h:outputText style="float: left;" value="#{row.label}"/>
+                </h:column>
+
+                <h:column>
+                        <f:facet name="header">Quantidade</f:facet>
+                        <h:outputText value="#{row.qtde}" style="float: right;"/>
+                </h:column>
+            </h:dataTable>
+            
+        <p><h3>Emails Recebidos</h3></p>
+        
+        <h:dataTable id="table2" value="#{reportsBean.emailReceivedReportList}" var="row"
+                         styleClass="order-table"
+    			headerClass="order-table-header"
+    			rowClasses="order-table-odd-row,order-table-even-row"> 
+                <h:column>
+                        <!-- column header -->
+                        <f:facet name="header">Email Funcionário</f:facet>
+                        <!-- row record -->                        
+                        <h:outputText style="float: left;" value="#{row.label}"/>
+                </h:column>
+
+                <h:column>
+                        <f:facet name="header">Quantidade</f:facet>
+                        <h:outputText value="#{row.qtde}" style="float: right;"/>
+                </h:column>
+            </h:dataTable>
+        
+    </h:body>
+</html>

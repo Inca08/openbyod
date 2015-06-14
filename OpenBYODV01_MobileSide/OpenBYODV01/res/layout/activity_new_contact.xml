@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".NewContact" >
+    
+    <EditText
+        android:id="@+id/EditTextNewContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/labelEditTextNewContactName"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/labelEditTextNewContactNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditTextNewContactName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/labelEditTextNewContactName"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/EditTextNewContactNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextNewContactName"
+        android:layout_alignRight="@+id/EditTextNewContactName"
+        android:layout_below="@+id/EditTextNewContactName"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/labelEditTextNewContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditTextNewContactNumber"
+        android:layout_alignLeft="@+id/labelEditTextNewContactNumber"
+        android:layout_alignTop="@+id/EditTextNewContactNumber"
+        android:gravity="center"
+        android:text="@string/labelEditTextNewContactNumber"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

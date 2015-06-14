@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_send_new_contact"
+        android:orderInCategory="100"
+        android:showAsAction="withText|ifRoom"
+        android:title="@string/action_send_new_contact"
+        android:onClick="menuClickSaveNewContact"/>
+</menu>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+        <h:head>
+        <title>Relatório</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>        
+        <h:outputStylesheet library="css" name="table-style.css"  />
+    </h:head>
+    <h:body>
+        <h2>Relatório de Perfomance - Chamadas Telefônicas Efetudas</h2>
+        <h:form>
+            <h:dataTable value="#{reportsBean.callReportList}" var="row"
+                         styleClass="order-table"
+    			headerClass="order-table-header"
+    			rowClasses="order-table-odd-row,order-table-even-row"> 
+                <h:column>
+                        <!-- column header -->
+                        <f:facet name="header">Nome</f:facet>
+                        <!-- row record -->
+                        #{row.label}
+                </h:column>
+
+                <h:column>
+                        <f:facet name="header">Quantidade</f:facet>
+                        <h:outputText style="float: right;" value="#{row.qtde}"/>
+                        
+                </h:column>
+            </h:dataTable>
+        </h:form>
+    </h:body>
+</html>

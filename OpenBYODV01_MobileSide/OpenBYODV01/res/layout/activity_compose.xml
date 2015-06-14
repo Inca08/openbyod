@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Compose" >
+    
+    
+    <EditText
+        android:id="@+id/editTextEmailFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/labelEditTextEmailFrom"
+        android:focusable="false"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextEmailTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextEmailFrom"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/labelEditTextEmailTo"
+        android:ems="10"
+        android:inputType="textEmailAddress" >
+        <!-- android:drawableLeft="@drawable/ic_launcher" -->
+        
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextEmailSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextEmailTo"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/labelEditTextEmailSubject"
+        android:ems="10"
+        android:hint="@string/emailSubject"
+        android:inputType="text" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextEmailBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextEmailSubject"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textMultiLine" 
+        android:hint="@string/emailBody">
+    </EditText>
+
+    <TextView
+        android:id="@+id/labelEditTextEmailFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextEmailTo"
+        android:layout_alignLeft="@+id/editTextEmailBody"
+        android:layout_alignTop="@+id/editTextEmailFrom"
+        android:gravity="center"
+        android:text="@string/labelEditTextEmailFrom"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/labelEditTextEmailTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextEmailSubject"
+        android:layout_alignLeft="@+id/labelEditTextEmailFrom"
+        android:layout_alignTop="@+id/editTextEmailTo"
+        android:gravity="center"
+        android:text="@string/labelEditTextEmailTo"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/labelEditTextEmailSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextEmailBody"
+        android:layout_alignLeft="@+id/editTextEmailBody"
+        android:layout_alignTop="@+id/editTextEmailSubject"
+        android:gravity="center"
+        android:text="@string/labelEditTextEmailSubject"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+</RelativeLayout>

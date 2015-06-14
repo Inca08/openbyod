@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Open BYOD</title>
+    </h:head>
+    <h:body>
+        <h2>Módulo de Relatórios</h2>
+        
+        <p>Relatório de Perfomance - Chamadas Telefônicas Efetudas</p>
+        <h:form>
+            <h:outputLabel value="Insira o mês:"/>
+            <h:selectOneMenu value="#{reportsBean.month}" > 
+                <f:selectItem itemValue="1" itemLabel="Janeiro"></f:selectItem>
+                <f:selectItem itemValue="2" itemLabel="Fevereiro"></f:selectItem>
+                <f:selectItem itemValue="3" itemLabel="Março"></f:selectItem>
+                <f:selectItem itemValue="4" itemLabel="Abril"></f:selectItem>
+                <f:selectItem itemValue="5" itemLabel="Maio"></f:selectItem>
+                <f:selectItem itemValue="6" itemLabel="Junho"></f:selectItem>
+                <f:selectItem itemValue="7" itemLabel="Julho"></f:selectItem>
+                <f:selectItem itemValue="8" itemLabel="Agosto"></f:selectItem>
+                <f:selectItem itemValue="9" itemLabel="Setembro"></f:selectItem>
+                <f:selectItem itemValue="10" itemLabel="Outubro"></f:selectItem>
+                <f:selectItem itemValue="11" itemLabel="Novembro"></f:selectItem>
+                <f:selectItem itemValue="12" itemLabel="Dezembro"></f:selectItem>
+            </h:selectOneMenu>
+            <h:commandButton value="Gerar Relatório"  type="submit" action="#{reportsBean.callReport}"></h:commandButton>
+        </h:form>
+        
+        <p>Relatório de Perfomance - Emails enviados e recebidos</p>
+        <h:form>
+            <h:outputLabel value="Insira o mês:" />
+            <h:selectOneMenu value="#{reportsBean.month}"> 
+                <f:selectItem itemValue="1" itemLabel="Janeiro"></f:selectItem>
+                <f:selectItem itemValue="2" itemLabel="Fevereiro"></f:selectItem>
+                <f:selectItem itemValue="3" itemLabel="Março"></f:selectItem>
+                <f:selectItem itemValue="4" itemLabel="Abril"></f:selectItem>
+                <f:selectItem itemValue="5" itemLabel="Maio"></f:selectItem>
+                <f:selectItem itemValue="6" itemLabel="Junho"></f:selectItem>
+                <f:selectItem itemValue="7" itemLabel="Julho"></f:selectItem>
+                <f:selectItem itemValue="8" itemLabel="Agosto"></f:selectItem>
+                <f:selectItem itemValue="9" itemLabel="Setembro"></f:selectItem>
+                <f:selectItem itemValue="10" itemLabel="Outubro"></f:selectItem>
+                <f:selectItem itemValue="11" itemLabel="Novembro"></f:selectItem>
+                <f:selectItem itemValue="12" itemLabel="Dezembro"></f:selectItem>
+            </h:selectOneMenu>
+            <h:commandButton value="Gerar Relatório"  type="submit" action="#{reportsBean.emailReport}"></h:commandButton>
+        </h:form>
+        
+        <p>Relatório de Políticas de Comportamento - Palavras-Chave em emails</p>
+        <h:form>
+            <h:outputLabel value="Insira o mês:"/>
+            <h:selectOneMenu value="#{reportsBean.month}"> 
+                <f:selectItem itemValue="1" itemLabel="Janeiro"></f:selectItem>
+                <f:selectItem itemValue="2" itemLabel="Fevereiro"></f:selectItem>
+                <f:selectItem itemValue="3" itemLabel="Março"></f:selectItem>
+                <f:selectItem itemValue="4" itemLabel="Abril"></f:selectItem>
+                <f:selectItem itemValue="5" itemLabel="Maio"></f:selectItem>
+                <f:selectItem itemValue="6" itemLabel="Junho"></f:selectItem>
+                <f:selectItem itemValue="7" itemLabel="Julho"></f:selectItem>
+                <f:selectItem itemValue="8" itemLabel="Agosto"></f:selectItem>
+                <f:selectItem itemValue="9" itemLabel="Setembro"></f:selectItem>
+                <f:selectItem itemValue="10" itemLabel="Outubro"></f:selectItem>
+                <f:selectItem itemValue="11" itemLabel="Novembro"></f:selectItem>
+                <f:selectItem itemValue="12" itemLabel="Dezembro"></f:selectItem>
+            </h:selectOneMenu>
+            <h:commandButton value="Gerar Relatório"  type="submit" action="#{reportsBean.keyWordReport}"></h:commandButton>
+        </h:form>
+        
+    </h:body>
+</html>
+
