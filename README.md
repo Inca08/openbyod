@@ -1,4 +1,4 @@
-# openbyod
+# OpenByod
 
 Free and open-source solution for mobile device management and BYOD.
 
@@ -9,3 +9,7 @@ It has the following features:
 * Professional contacts list management
 * Employee activities monitoring
 * Coded using widely spread techonologies (Java EE, Jersey, Restful, Android SDK)
+
+# License
+
+Everything in this repo is GPL License unless otherwise specified.
