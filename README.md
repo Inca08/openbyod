@@ -12,4 +12,4 @@ It has the following features:
 
 # License
 
-Everything in this repo is GPL License unless otherwise specified.
+Everything in this repository is GPL Licensed.
